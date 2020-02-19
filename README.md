@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="Angular Admin Logo" />
+  <img src="src/assets/logo.png" alt="Angular Admin Logo" />
 </p>
 
 <h1 align="center">AngularAdmin</h1>
