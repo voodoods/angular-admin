@@ -9,7 +9,9 @@
 
 <style>
   :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
     font-size: 14px;
     color: #333;
     box-sizing: border-box;
@@ -31,11 +33,35 @@
   }
 </style>
 
-<div>
-  <mat-toolbar color="primary">
-    <h1>Yay, boring Angular app.</h1>
+<div class="app-bg">
+  <mat-toolbar class="app-header" color="primary">
+    <img src="assets/logo.png" class="app-logo" />
+    <h1>angular <span class="light">admin</span></h1>
   </mat-toolbar>
+  <div class="app-content">
+    <mat-grid-list
+      class="dashboard"
+      cols="3"
+      rowHeight="300"
+      gutterSize="15"
+    >
+      <mat-grid-tile [colspan]="2">
+        <mat-card class="card">
+          <h1 class="mat-headline">Revenue</h1>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile [rowspan]="2">
+        <mat-card class="card">
+          <h1 class="mat-headline">Tools</h1>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2">
+        <mat-card class="card">
+          <h1 class="mat-headline">Users</h1>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
 </div>
-
 
 <router-outlet></router-outlet>
