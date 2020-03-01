@@ -1,66 +1,8 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<style>
-  :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-  }
-
-  p {
-    margin: 0;
-  }
-</style>
-
 <div class="app-bg">
-  <mat-toolbar class="app-header" color="primary">
-    <img src="assets/logo.png" class="app-logo" />
-    <h1>angular <span class="light">admin</span></h1>
-  </mat-toolbar>
+  <app-header></app-header>
+
   <div class="app-content">
-    <mat-grid-list
-      class="dashboard"
-      cols="3"
-      rowHeight="300"
-      gutterSize="15"
-    >
-      <mat-grid-tile [colspan]="2">
-        <mat-card class="card">
-          <h1 class="mat-headline">Revenue</h1>
-        </mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile [rowspan]="2">
-        <mat-card class="card">
-          <h1 class="mat-headline">Tools</h1>
-        </mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile [colspan]="2">
-        <mat-card class="card">
-          <h1 class="mat-headline">Users</h1>
-        </mat-card>
-      </mat-grid-tile>
-    </mat-grid-list>
+    <app-dashboard></app-dashboard>
   </div>
 </div>
 
