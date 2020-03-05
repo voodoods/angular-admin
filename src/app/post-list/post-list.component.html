@@ -1,0 +1,36 @@
+<h1 class="mat-h2">Blog Posts</h1>
+<table mat-table [dataSource]="blogPosts" class="post-list-table">
+  <ng-container matColumnDef="id">
+    <mat-header-cell *matHeaderCellDef class="col-id">id</mat-header-cell>
+    <mat-cell *matCellDef="let post" class="col-id">{{ post.id }}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="title">
+    <mat-header-cell *matHeaderCellDef class="col-title">title</mat-header-cell>
+    <mat-cell
+      class="description-cell"
+      *matCellDef="let post"
+      class="col-title"
+      >{{ post.title }}</mat-cell
+    >
+  </ng-container>
+
+  <ng-container matColumnDef="userId">
+    <mat-header-cell *matHeaderCellDef class="col-user-id"
+      >user id</mat-header-cell
+    >
+    <mat-cell
+      class="duration-cell"
+      *matCellDef="let post"
+      class="col-user-id"
+      >{{ post.userId }}</mat-cell
+    >
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+
+  <mat-row
+    class="table-row"
+    *matRowDef="let row; columns: displayedColumns"
+  ></mat-row>
+</table>
