@@ -1,0 +1,8 @@
+<ul class="main-menu">
+  <li *ngFor="let entry of menuEntries">
+    <a [routerLink]="[entry.path]" >
+      {{ entry.title }}
+    </a>
+  </li>
+</ul>
+
