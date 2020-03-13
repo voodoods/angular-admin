@@ -15,7 +15,7 @@ export class PostListComponent implements OnInit {
 
   getBlogPosts() {
     this.postListService
-      .getPostsList()
+      .getPostList()
       .subscribe(res => (this.blogPosts = res));
   }
 
@@ -23,7 +23,7 @@ export class PostListComponent implements OnInit {
     this.getBlogPosts();
   }
 
-  onRowClicked(row) {
-    console.log("Row clicked: ", row);
+  onRowClicked(rowIndex : number) {
+    console.log("Row clicked: ", rowIndex);
   }
 }
