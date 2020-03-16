@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  POST_LIST_SERVICE_HOST: 'http://localhost:4001'
+  POST_LIST_SERVICE_HOST: 'http://localhost:4001',
+  USER_LIST_SERVICE_HOST: 'http://localhost:4001'
 };
 
 /*

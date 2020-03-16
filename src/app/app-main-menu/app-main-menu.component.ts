@@ -15,7 +15,8 @@ export class AppMainMenuComponent implements OnInit {
   ngOnInit() {
     this.menuEntries = [
       { title: 'dashboard', path: '/'},
-      { title: 'blog posts', path: '/posts'}
+      { title: 'blog posts', path: '/posts'},
+      { title: 'users', path: '/users'}
     ]
   }
 
